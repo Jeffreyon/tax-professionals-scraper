@@ -47,7 +47,7 @@ I had done a pagination scraper before, but i knew i didn't want to do the whole
 
 So I built something lightweight that simply visited a black professional's page (Using `puppeteer`), scraped the information i needed (using `cheerio`) and visited the next black professional within a loop which runs for the number of leads i wanted (I submitted 20 leads as a sample in my proposal).
 
-But it felt slow, i was scrpaing leads at a slow rate, and jobs like these expected speed, so i went back to the website and found out it was a server-rendered application. Then i improved the speed by skipping `puppeteer` and loading the website as html using `isomorphic-fetct` and scraped the data i needed.
+But it felt slow, i was scrpaing leads at a slow rate, and jobs like these expected speed, so i went back to the website and found out it was a server-rendered application. So i improved the speed by skipping `puppeteer` and loading the website as html using `isomorphic-fetch` and scraped the data i needed.
 
 At the end the script was scraping leads at 1 lead per second (Sometimes longer, sometimes shorter due to varying internet speed)
 
