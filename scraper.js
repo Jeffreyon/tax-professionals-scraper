@@ -38,7 +38,7 @@ async function runScraper(url) {
         }
 
         // write leads to json file
-        let file_name = "black tax professinals.json";
+        let file_name = "black tax professionals.json";
         let data = JSON.stringify(leads);
 
         fs.writeFile(file_name, data, (err) => {
